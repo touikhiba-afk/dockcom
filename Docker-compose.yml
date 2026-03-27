@@ -1,4 +1,4 @@
-ervices:
+services:
   backend:
     build: ./backend
     image: votre_username_docker/flask-api:latest
