@@ -19,13 +19,13 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build backend
-        run: docker build -t oumeyma111/flask-api ./backend
+        run: docker build -t hibatouik/flask-api ./backend
 
       - name: Build frontend
-        run: docker build -t oumeyma111/frontend-app ./frontend
+        run: docker build -t hibatouik/frontend-app ./frontend
 
       - name: Push backend
-        run: docker push oumeyma111/flask-api
+        run: docker push hibatouik/flask-api
 
       - name: Push frontend
-        run: docker push oumeyma111/frontend-app
+        run: docker push hibatouik/frontend-app
