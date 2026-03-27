@@ -4,7 +4,7 @@ services:
     image: votre_username_docker/flask-api:latest
     ports:
       - "5000:5000"
-    environnement:
+    environement:
       DB_HOST: db
       DB_USER: root
       DB_PASSWORD: root
@@ -22,7 +22,7 @@ services:
 
   db:
     image: mysql:8
-    environnement:
+    environement:
        MYSQL_ROOT_PASSWORD: root
        MYSQL_DATABASE: flaskdb
     volumes:
