@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-import mysql.connector
+import mysql.connector # type: ignore
 import os
 from flask_cors import CORS
 
@@ -8,7 +8,7 @@ CORS(app)  # active CORS pour toutes les routes
 DB_HOST = os.getenv("DB_HOST", "db")
 DB_USER = os.getenv("DB_USER", "root")
 DB_PASSWORD = os.getenv("DB_PASSWORD", "root")
-DB_NAME = os.getenv("DB_NAME", "dbflask")
+DB_NAME = os.getenv("DB_NAME", "flaskdb")
 
 @app.route("/api/users")
 def get_users():
